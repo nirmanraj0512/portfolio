@@ -119,14 +119,9 @@ const Hero=()=>{
             <Speech/>
 
             {/* Conatct Button */}
-            <motion.a className='contactLink'
-            onClick={() => {
-              const contactSection = document.getElementById("contact");
-              if (contactSection) {
-                contactSection.scrollIntoView({ behavior: "smooth" });
-              }
-            }}
-
+            <motion.a   
+            href="mailto:nirmanraj0512@gmail.com?subject=Hiring Inquiry&body=Hi, I'm interested in hiring you. Please Contact me on this email"
+            className="contactLink"
             animate={{
               x:[200,0],
               opacity:[0,1],

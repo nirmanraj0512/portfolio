@@ -5,13 +5,14 @@
 import { lazy } from "react"
 import LazyLoad from "react-lazyload";
 import { Suspense } from "react";
+import { useEffect } from "react";
+
 
 const Hero=lazy(()=>import("./components/hero/Hero"));
 const Services=lazy(()=>import("./components/services/Services"));
 const Portfolio=lazy(()=>import("./components/portfolio/Portfolio"));
 const Contact=lazy(()=>import("./components/contact/Contact"));
 function App() {
-  
 
   return (
     <div className="container">
@@ -38,9 +39,9 @@ function App() {
       </Suspense>
       <Suspense fallback={"loading..."}>
         <LazyLoad height={"100vh"} offset={-100}>
-          <section id="#contact">
+          <section id="contact">
             <Contact />
-          </section>{" "}
+          </section>
         </LazyLoad>
       </Suspense>
     </div>
