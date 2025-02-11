@@ -1,6 +1,7 @@
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
 import { motion } from 'motion/react'
+import "./Speech.css"
 
 const Speech =()=>{
     return (
@@ -11,10 +12,12 @@ const Speech =()=>{
         <TypeAnimation
       sequence={[
         1000,
-       " Same substring at the start will only be typed out once, initially",
-        1000,
-        'We produce food for Hamsters',
-        1000,
+        "Building seamless and scalable web applications.",
+        2000,
+        "MERN, Next.js, and TypeScript enthusiast!",
+        2000,
+        "Let's build something together!",
+        2000,
       ]}
       wrapper="span"
       speed={40}

@@ -38,16 +38,17 @@
 .hTitle{
     margin-top: 50px;
     font-size: 90px;
-    color: pink;
+    color: #FF6B6B;
 }
 .hTitle span{
+    font-size: 100px;
     color:white
 }
 .awards{
     width:30%;
 }
 .awards p{
-    font-size: 14px;
+    font-size: 17px;
     color: #ddd;
     margin: 16px 0px;
 }
@@ -79,9 +80,20 @@
     background-color: #2f2046;
     border-bottom-right-radius: 10px;
 }
-.follow img{
-    width: 20px;
+.social-icon {
+    width: 20px;  /* Optimal size */
     height: 20px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  /* Hover effect: Scale & Glow */
+  .social-icon:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
+  }
+.follow img{
+    width: 40px;
+    height: 40px;
 }
 .followTextContainer{
     width: 20px;
@@ -152,6 +164,7 @@
 .circleText{
     letter-spacing: 3px;
     font-size:20px;
+    
 }
 .arrow{
     position:absolute;

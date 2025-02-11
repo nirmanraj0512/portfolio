@@ -52,14 +52,14 @@ const Hero=()=>{
             <motion.div variants={awardVariant}     initial="initial"
             animate="animate" 
             className='awards'>
-                <h2>Coder</h2>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <h1>Web Engineer</h1>
+                <p>Bridging creativity and technology—one line of code at a time.</p>
                 <motion.div 
                 variants={awardVariant}
                 className='awardList'>
-                    <motion.img variants={awardVariant} src="/award1.png" alt='Award1'/>
+                    {/* <motion.img variants={awardVariant} src="/award1.png" alt='Award1'/>
                     <motion.img variants={awardVariant} src="/award2.png" alt='Award1'/>
-                    <motion.img variants={awardVariant} src="/award3.png" alt='Award1'/>
+                    <motion.img variants={awardVariant} src="/award3.png" alt='Award1'/> */}
                 </motion.div>
             </motion.div>
             {/* Scroll SVG */}
@@ -100,29 +100,33 @@ const Hero=()=>{
         </div>
         <div className="hSection right">
             {/* FOLLow */}
-            <motion.div  variants={followVariant}   initial="initial" animate="animate" className='follow'>
-                <motion.a variants={followVariant}  href='https://www.instagram.com/nirmanraj0512'>
-                    <img src="/instagram.png" alt='Instagram'/>
-                </motion.a>
-                <motion.a variants={followVariant} href='https://github.com/nirmanraj0512'>
-                    <img src="/facebook.png" alt='Facebook'/>
-                </motion.a>                
-                <motion.a variants={followVariant} href='https://x.com/nirmanraj_0512'>
-                    <img src="/youtube.png" alt='Facebook'/>
-                </motion.a>
-                <motion.div 
-                variants={followVariant} 
-                className='followTextContainer'>
-                    <div className='followText'>
-                        FOLLOW ME
-                    </div>
-                </motion.div>                
-            </motion.div>
+            {/* Social Media Links */}
+<motion.div variants={followVariant} initial="initial" animate="animate" className='follow'>
+  <motion.a variants={followVariant} href='https://www.instagram.com/nirmanraj0512' target="_blank" rel="noopener noreferrer">
+    <img src="/insta.svg" alt='Instagram' className="social-icon"/>
+  </motion.a>
+  <motion.a variants={followVariant} href='https://github.com/nirmanraj0512' target="_blank" rel="noopener noreferrer">
+    <img src="/git.svg" alt='GitHub' className="social-icon"/>
+  </motion.a>                
+  <motion.a variants={followVariant} href='https://x.com/nirmanraj_0512' target="_blank" rel="noopener noreferrer">
+    <img src="/linkedin.svg" alt='Twitter' className="social-icon"/>
+  </motion.a>
+  <motion.div variants={followVariant} className='followTextContainer'>
+    <div className='followText'>FOLLOW ME</div>
+  </motion.div>                
+</motion.div>
             {/* Buuble */}
             <Speech/>
 
             {/* Conatct Button */}
-            <motion.a  href='/#contact' className='contactLink'
+            <motion.a className='contactLink'
+            onClick={() => {
+              const contactSection = document.getElementById("contact");
+              if (contactSection) {
+                contactSection.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+
             animate={{
               x:[200,0],
               opacity:[0,1],
@@ -133,7 +137,11 @@ const Hero=()=>{
             animate={{rotate:[0,360]}} transition={{repeat:Infinity,
               duration:10,
               ease:"linear"
-            }}>
+            }}
+            whileHover={{ rotate: 0, scale: 1.1 }}
+            >
+
+              
             <svg viewBox="0 0 200 200" width="150" height="150">
               <circle cx="100" cy="100" r="90" fill="pink" />
               <path

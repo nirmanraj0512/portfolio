@@ -1,0 +1,17 @@
+.animatedText {
+    font-family: "Poppins", sans-serif; /* Use a clean, modern font */
+    font-size: 18px; /* Adjust as needed */
+    font-weight: 600; /* Make it stand out */
+    color: #ffffff; /* Change color for better contrast */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Soft shadow effect */
+  }
+  
+  .bubble {
+    background: #ffffff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    display: inline-block;
+    max-width: 300px;
+    text-align: center;
+  }
+  
