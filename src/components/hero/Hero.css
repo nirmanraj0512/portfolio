@@ -247,3 +247,53 @@
         display: none;
     }
 }
+
+
+
+
+
+
+
+/* GPT */
+
+.resumeButton {
+    position: fixed;  /* Stays in place while scrolling */
+    left: 20px;       /* Adjust this for exact positioning */
+    bottom: 20px;     /* Adjust as needed */
+    z-index: 1000;    /* Ensures it's above other elements */
+    cursor: pointer;
+  }
+  
+  .resumeIcon {
+    width: 60px;       /* Adjust size */
+    height: 60px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .resumeButton:hover .resumeIcon {
+    transform: scale(1.2);
+  }
+  
+
+
+  /* Resume Button CSS */
+
+  .resumeButton {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    cursor: pointer;
+  }
+  
+  .resumeIcon {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .resumeButton:hover .resumeIcon {
+    transform: scale(1.2);
+  }
+  
+  
