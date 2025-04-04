@@ -20,7 +20,7 @@ const ResumeButton = () => {
     <motion.a
     onClick={(e) => {
         e.preventDefault();
-        const newTab = window.open("https://drive.google.com/file/d/1LyXjvMcWhGLEx0Il-IsAI99svG5mz5g-/view?usp=drive_link", "_blank");
+        const newTab = window.open("https://drive.google.com/file/d/1q8ySSg4ZvXulfrZgU6p7zF-ZRa76XCWU/view?usp=sharing", "_blank");
         if (newTab) {
           newTab.blur(); // Sends the new tab to the background
           window.focus(); // Keeps focus on the current page
