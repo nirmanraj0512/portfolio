@@ -57,29 +57,20 @@ const Hero = () => {
           animate="animate"
           className="awards"
         >
+          
           <h1>Web Engineer</h1>
           <p>Bridging creativity and technology—one line of code at a time.</p>
+          <div className="resumeWrapper">
+    <ResumeButton />
+  </div>
           <motion.div variants={awardVariant} className="awardList">
             {/* <motion.img variants={awardVariant} src="/award1.png" alt='Award1'/>
                     <motion.img variants={awardVariant} src="/award2.png" alt='Award1'/>
                     <motion.img variants={awardVariant} src="/award3.png" alt='Award1'/> */}
           </motion.div>
         </motion.div>
-        {/* Resume Downloader*/}
-        {/* <motion.a 
-  href="https://drive.google.com/file/d/1LyXjvMcWhGLEx0Il-IsAI99svG5mz5g-/view?usp=drive_link" 
-  target="_blank" 
-  rel="noopener noreferrer"
-  className="resumeButton"
-  whileHover={{ scale: 1.1 }}
->
-  <img 
-    src="/download.svg" 
-    alt="Download Resume" 
-    className="resumeIcon"
-  />
-</motion.a> */}
-<ResumeButton/>
+       
+
       </div>
       <div className="hSection right">
         {/* FOLLow */}

@@ -26,7 +26,7 @@ const Speech =()=>{
       //Change font style addd meainig ful text
     />
         </div>
-        <img src='/man.png' alt='Man'/>
+        <img src='/me.png' alt='Man'/>
     </motion.div>
     )
 

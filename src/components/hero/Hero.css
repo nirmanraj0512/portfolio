@@ -297,3 +297,11 @@
   }
   
   
+  .resumeWrapper {
+    margin-top: 20px; /* Adjust this for proper spacing */
+    display: relative;
+    align-self: auto;
+    margin-bottom: 100px;
+    
+
+  }

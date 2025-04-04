@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import "./contact.css"
+import "./Contact.css"
 import emailjs, { init } from "@emailjs/browser"
 import { useRef } from 'react'
 import { motion, useInView } from "motion/react"
