@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import "./hero.css";
+import "./Hero.css";
 import Speech from "./Speech";
 import { motion } from "motion/react";
 import { Canvas } from "@react-three/fiber";
@@ -37,7 +37,7 @@ const followVariant = {
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div className="hero" >
       <div className="hSection left">
         <motion.h1
           initial={{ y: -100, opacity: 0 }}

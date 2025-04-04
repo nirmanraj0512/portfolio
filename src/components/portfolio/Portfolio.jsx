@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import "./portfolio.css";
+import "./Portfolio.css";
 import { motion, useInView, useScroll, useTransform } from "motion/react";
 const items = [
   {
