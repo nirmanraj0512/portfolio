@@ -2,7 +2,6 @@ import React, { Suspense } from "react";
 import "./hero.css";
 import Speech from "./Speech";
 import { motion } from "motion/react";
-import { animate, easeInOut } from "motion";
 import { Canvas } from "@react-three/fiber";
 import Shape from "./Shape";
 import ResumeButton from "./ResumeButton";
